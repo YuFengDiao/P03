@@ -50,7 +50,7 @@
 
 .total-border:hover,
 .total-border:focus {
-    border: red solid;
+    border: #0469f7 solid;
     padding: 2rem;
     border-radius: 2rem;
     margin-right: 1rem;
@@ -60,7 +60,7 @@
 
 .pay-border:hover,
 .pay-border:focus{
-    border: red solid;
+    border: #0469f7 solid;
     padding: 2rem;
     border-radius: 2rem;
     margin-right: 1rem;
