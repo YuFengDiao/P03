@@ -1,22 +1,19 @@
-
-html,
 body {
-	margin: 0;
-	height: 100vh;
-	width: 100vw;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-}
-body {
-    background: white;
-    color: black;
-}
-
-#header{
-    width: 100%;
-    height: 100vh;
-}
-
+	font-family: 'Poppins-Regular', Verdana;
+	padding: 2rem;
+	background-color: #ffffff;
+	color:rgb(0, 0, 0);
+	
+  }
+  /* HYPERLINK */
+  a { 
+	color: red;
+  }
+  /* HYPERLINK HOVER */
+  a:hover {
+	color: darkred;
+	transition: 0.25s ease-in-out;
+  }
 /* Nav bar */
 
 /* NEW NAV learned from https://codepen.io/rexdesigndk/pen/gJYExb*/
@@ -272,4 +269,210 @@ footer{
 	  grid-gap: 20px;
 	}
   }
+  
+
+
+
+  
+  /* CATEGORY */
+  .element {
+	padding-bottom: 2rem;
+	border-top-width: 0.15rem;
+	border-top-style: solid;
+	border-top-color: #1fade0;
+  }
+  
+  /* NAVIGATION BAR BUTTONS */
+  .navBut {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	padding: 0.3rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+  }
+  /* NAVIGATION SPECIALS */
+  .navBut:hover,
+  .navBut:focus,
+  .navBut:active
+   {
+	color: darkred;
+	text-decoration: none;
+	transition: 0.15s ease-in-out;
+  }
+  
+  
+  h2:not(.header2) {
+	margin-top: 6rem;
+  }
+  h3:not(.header3) {
+	font-style: italic;
+	margin-top: 1rem;
+  }
+  h4:not(.header4) {
+	margin-bottom: 0.25rem;
+  }
+  /* PARAGRAPH */
+  p {
+	margin-top: 0;
+  }
+  /* NAVIGATION BAR COLOUR */
+  nav {
+	/* background-color: #f0f0f0; */
+	padding: 0.5rem;
+	display: block;
+  }
+  
+  .topnav-right {
+	float: right;
+  }
+  
+  /* SUB NAVIGATION BAR COLOUR ONLY IN INDEX*/
+  .navAnchor {
+	background-color: #dddddd;
+  }
+  nav a:hover,
+  nav a:focus {
+	text-decoration: none;
+  }
+  code {
+	background-color: #f0f0f0;
+	padding: 0.5rem;
+	display: block;
+  }
+  /* 
+	INTERACTIVE ELEMENTS -------------------
+  */
+  /* Styling for the navigation button */
+  /* nothing below makes the buttons turn grey after click*/
+  .button-nav {
+	display: inline-block;
+	padding: 0.5rem;
+	color: white; 
+	background-color: red;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+	border-radius: 2rem;
+	border: none;
+	outline: none;
+	box-shadow: 0 5px grey;
+  }
+  .button-nav:hover{
+	color: white; 
+	background-color: darkred;
+	transition: background-color 0.3s ease-out;
+  }
+  .button-nav:active {
+	background-color: darkred; 
+	color: white; 
+	box-shadow: 0 3px black;
+	transform: translateY(3px); 
+  } 
+  
+  
+  .field-nav {
+	display: inline-block;
+	padding: 0.5rem;
+	color: #000000; /* TEXT AND BUTTON BORDER */
+	background-color:  #f0f0f0;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+	border-radius: 2rem;
+	border: solid;
+  }
+  .field-nav:hover,
+  .field-nav:focus {
+	background-color: #ffffff;
+	border: solid darkred;
+	color: black;
+  }
+  
+  /* 2. Add space between <section> elements. */
+  /* LEARNED IN LAB */
+  section {
+	margin-top: 3rem;
+  }
+  /* 4. Add a different hover and focus state styling to the image as a link. */
+  /* LEARNED IN LAB */
+  /* pikachu img in styleguide*/
+  figure img:hover,
+  figure img:active,
+  figure img:focus {
+	opacity: 60%;
+	transition-duration: 0.25s;
+  }
+  
+  /* 5. Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
+  /* LEARNED IN LAB */
+  p,
+  ul,
+  ol {
+	max-width: 60rem;
+  }
+  
+  
+  /* 6. Style the <input> and <label> using Building Forms (Shay Howe)Links to an external site. as a guide. Add HTML as necessary to allow further control of the styling, and make sure:
+  The label and text input look visually related.
+  
+  The text input shows us when it has been interacted with, both on hover and focus. */
+  
+  /* LEARNED IN LAB Source: https://learn.shayhowe.com/html-css/building-forms/#multple-choice-inputs*/
+  
+  input:hover,
+  input:active,
+  input:focus {
+	color: rgb(0, 0, 0);
+	background-color: rgb(228, 228, 228);
+	transition: 0.25s ease-in-out;
+  }
+  
+  .serif {
+	font-family: "RobotoSlab-Regular", Times;
+  
+  }
+  
+  
+  /* HOVER NAV BUTTONS */
+  .nav-link {
+	color: black;
+	font-weight: bold;
+	/* font-size: 16px; */
+	padding: 0px 0px; /*making the line not too far to right*/
+	margin: 0px 10px;
+	display: inline-block;
+	position: relative;
+  }
+  
+  .nav-link::before {
+	transition: 0.15s; /* time it takes for bar to appear*/
+	height: 5px;
+	content: "";
+	position: absolute;
+	background-color: darkred;
+  }
+  
+  /*BAR WIDTH B4 HOVER */
+  .nav-bar-up::before {
+	margin: -8px 0px; /*moving the red bar down*/
+	height: 0;
+	width: 100%;
+	bottom: 0;
+  }
+  
+  /* BAR HEIGHT WHEN HOVERED */
+  .nav-bar-up:hover::before {
+	height: 4px;
+  }
+  
+  .active {
+	background-color:darkred;
+  }
+  .header {
+	padding-top: 1rem;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+  }
+  
   
