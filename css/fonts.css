@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    font-weight: normal;
+    font-styles: normal;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-styles: bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Thin';
+    font-weight: normal;
+    font-styles: normal;
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    font-weight: normal;
+    font-styles: normal;
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
