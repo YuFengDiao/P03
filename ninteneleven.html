@@ -1,72 +1,55 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/fonts.css">
-        <title>YuFeng's Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuFeng's Porfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Icon from https://github.com/atisawd/boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <div id="header">
-        <div class="nav-wrapper">
-            <div class="logo-container">
-                <h1 class="logo">YuFeng Diao.</h1>
-            </div>
-            <nav>
-                <input class="hidden" type="checkbox" id="menuToggle">
-                <label class="menu-btn" for="menuToggle">
-                    <div class="menu"></div>
-                    <div class="menu"></div>
-                    <div class="menu"></div>
-                </label>
-                <div class="nav-container">
-                    <ul class="nav-tabs">
-                        <a class="nav-tab" href="index.html" style="text-decoration-line: none">StyleGuide</a>
-                        <a class="nav-tab" href="home.html" style="text-decoration-line: none">Home</a>
-                        <a class="nav-tab" href="about.html" style="text-decoration-line: none">About</a>
-                        <a class="nav-tab" href="services.html" style="text-decoration-line: none">Services</a>
-                        <a class="nav-tab" href="portfolio.html" style="text-decoration-line: none">Portfolio</a>
-                        <a class="nav-tab" href="contact.html" style="text-decoration-line: none">Contact</a>
-                    </ul>
-                </div>
-            </nav>
-        </div>   
+    
+    <!-- Header -->
+    <header>
+        <a href="home.html" class="logo"> YuFeng.</a> 
 
-    <section>
-        <div class="box">
+        <ul class="navlist">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="index.html">StyleGuide</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <!-- Hamburger icon-->
+        <div class="bx bx-menu" id="hamburger-icon">
 
-            <div class="box-item product-item-border">
-                <img src="img/ninteneleven.png" alt="ninteneleven website" width="100%" style="border-radius: 1rem;">
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="projectimg">
+            <img src="img/ninteneleven.png" alt="picture of user">
+        </div>
 
-            </div>
-
-            <div class="box-item product-item-border">
-
-
-
-
-                <h2 class="header2">ninteneleven</h2>
-                <h3 class="header3">Web Development and Design</h3>
-
-                <h3>This project was to design and develop a website for a made-up company</h3>
-                <h3>Team: YuFeng Diao and Jasper Ling</h3>
-                <h3>Roles: Web Designer and Developer</h3>
-            </div>
-
+        <div class="aboutinfo">
+            <h2>ninteneleven</h2>
+            <h4>ninteneleven is a made up video game website created using HTML and CSS.</h4>
+            <p>Hey there, I'm YuFeng a fourth-year student studying Intrative Arts and Technology at Simon Fraser University. From an early age, I've been fascinated by the fusion of technology and design, and I've always sought ways to enhance user experiences. Through my studies and practical experiences, I've honed my eye for aesthetics and developed a deep passion for crafting seamless digital interactions. I'm eager to stay ahead of emerging trends and collaborate with peers in this ever-evolving field. My ultimate goal is to work with a tech company that values user-centric design, creating products that leave a lasting impact and delight users worldwide. As graduation nears, I'm excited to embrace new challenges and make my mark in the world of UX/UI design.</p>
+        </div>
     </section>
+
+  <!-- Footer/contact section -->
     <footer> <!-- Footer learned from https://youtu.be/JViuPwlP1mU-->
-        <div class="container">
-            <div class="section about me">
-                <h2 class="header2">About Me</h2>
-                <p>Hello, I'm YuFeng. Currently studying Intrative Arts and Technology at Simon Fraser University.</p>
-                <p>Copyright ©2023 YuFeng Diao. All Rights Reserved.</p>
+        <div class="container" id="contact">
+            <div class="section-about-me">
+                <h2 class="header2">About Me</h2><br>
+                <p>Hello, I'm YuFeng. UI/UX Designer. Currently studying Intrative Arts and Technology at Simon Fraser University.</p>
+                <br><p>Copyright ©2023 YuFeng Diao. All Rights Reserved.</p>
             </div>
             <div class="section quicklinks">
             </div>
@@ -75,8 +58,7 @@
                 <ul>
                     <li><a href="index.html">StyleGuide</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="portfolio.html">Porfolio</a></li>
                 </ul>
             </div>
             <div class="section contact">
@@ -92,5 +74,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Js -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
