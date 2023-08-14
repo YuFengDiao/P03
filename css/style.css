@@ -123,7 +123,7 @@ section{
     line-height: 1.8;
     margin-bottom: 40px;
 }
-
+/* learned from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
 header.sticky{
     background: white;
     border-bottom: 1px solid red;
@@ -324,7 +324,7 @@ footer .container .contact li a {
 }
 /* Footer */
 
-/* Reponsiveness*/
+/* learned from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 /* for nav header*/
 @media (max-width: 1480px){
     header{
