@@ -1,7 +1,6 @@
 body {
 	font-family: 'SourceSansPro' ,sans-serif;
 	padding: 2rem;
-	background-color: #E2D8CB; 
   }
   
   h1, h2, h3, h4{ /* only headers ptsans font*/
@@ -41,19 +40,19 @@ body {
   }
   
   .text-link{
-	color:#009A17;
+	color: red;
   }
    
   .text-link:hover{
-	color: green;
+	color: darkred;
 	text-decoration: underline;
   }
   .citation-link li > a{ /* new class for citation, gets the list and then the anchors inside*/
-	color: #009A17;
+	color: red;
   }
   
   .citation-link:hover li > a{
-	color: green;
+	color: darkred;
 	text-decoration: underline;
   }
   nav a:hover, nav a:focus {
@@ -84,7 +83,7 @@ body {
 	font-size: 24px;
 	padding: 5px 20px;
 	text-align: center;
-	background-color: #009A17;
+	background-color: red;
 	outline: none;
 	border: none;
 	border-radius: 5px;
@@ -92,12 +91,12 @@ body {
   }
   
   .button:hover {
-	background-color: green;
+	background-color: darkred;
 	transition: background-color 0.3s ease-out;
   }
   
   .button:active {
-	background-color: #009A17;
+	background-color: red;
 	box-shadow: 0 3px black;
 	transform: translateY(3px);
   }
@@ -114,8 +113,8 @@ body {
   }
   
   input[type=text]:focus{
-	border-color: #009A17;
-	box-shadow:0 0 8px 0 #009A17;
+	border-color: red;
+	box-shadow:0 0 8px 0 red;
   }
   
   input[type=text]:hover{
@@ -138,7 +137,7 @@ body {
   }
   
   .link-button{
-	background-color:#009A17; 
+	background-color:red; 
 	color: white;
 	text-decoration: none;
 	padding: 0.5rem;
@@ -147,7 +146,7 @@ body {
   
   /* learned in lab */
   .link-button:hover, .link-button:focus, .link-button:active{
-	background-color: green; /* #008000*/
+	background-color: darkred; /* #008000*/
 	color: white;
 	transition: background-color 0.3s ease-out;
   }
@@ -156,22 +155,12 @@ body {
 	opacity: 80%;
   }
   
-  /* 
-	TEXT ELEMENTS -------------------
-  */
-  
-  
-  /* 
-	COMBINED ELEMENTS -------------------
-  */
-  
-  
   /* Main Nav learned from https://codepen.io/sreisner/pen/yOOOjx */
   .navbar {
-	Background-color: #009A17;
+	Background-color: red;
   }
   .navbar2 {
-	Background-color: green;
+	Background-color: darkred;
   }
   
   .nav-link {

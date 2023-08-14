@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+   
+    <title>YuFeng's Porfolio</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css"> 
+
+  </head>
+
+  <body>
+    <header>
+      <h1>YuFeng's Porfolio</h1>
+      <nav class="navbar">  
+        <a class="nav-link nav-bar-up" href="index.html">Style Guide</a>
+        <a class="nav-link nav-bar-up" href="home.html">Home</a>
+        <a class="nav-link nav-bar-up" href="checkout.html">Checkout</a>
+        <a class="nav-link nav-bar-up" href="#citations">Citations</a>
+      </nav>
+      <nav class="navbar2">  
+        <a class="nav-link nav-bar-up" href="#interactive_elements">Interactive Elements</a>
+        <a class="nav-link nav-bar-up" href="#text_elements">Text Elements</a>
+        <a class="nav-link nav-bar-up" href="#combined_elements">Combined Elements</a>
+        <a class="nav-link nav-bar-up" href="#basic_branding_ideas">Basic Branding Ideas</a>
+        <a class="nav-link nav-bar-up" href="#assemble_brand_components">Assemble Brand Components</a>     
+      </nav>
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+      <section class="element">
+        <h3>In-text link</h3>
+          <!-- Learned in lecture/lab -->
+          <p> Click <a class="text-link" target = "_blank" href = "https://bungiestore.com/"> More Products </a> to view the store.</p>
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+        <h4>Sample code:</h4>
+        <code>&lt;button class="button"&gt;Default Button&lt;/button&gt;</code>
+        <h4>Rendered element:</h4>
+        <button class="button">Default Button</button>
+      </section>
+
+      <section class="element">
+        <!-- learned from https://www.w3schools.com/howto/howto_css_animate_buttons.asp -->
+        <h3>Submit/Reset Buttons</h3>
+        <button class="button">Submit</button><br>
+        <br><button class="button">Reset</button>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <!-- learned from class -->
+        <form>
+          <label><strong> Full Name:</strong></label><br>
+          <br><input type="text" placeholder="First Name">
+          <br><input type="text" placeholder="Middle Name">
+          <br><input type="text" placeholder="Last Name">
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <!-- learned from https://www.w3schools.com/tags/att_input_type_radio.asp -->
+        <form>
+          <p>Please select your favourite character class:</p>
+          <input type="radio" id="class1" name="class" value="Service 1">
+          <label for="class1">Serivce 1</label><br>
+          <input type="radio" id="class2" name="class" value="Service 2">
+          <label for="class2">Service 2</label><br>  
+          <input type="radio" id="class3" name="class" value="Service 3">
+          <label for="class3">Service 3</label><br><br>
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <!-- Learned from https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML -->
+        <p><a href="https://www.bungie.net/7/"><img src="img/Destiny2%20Logo.png" alt="this is the Destiny 2logo" style="width:200px;height:200px;"></a></p>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+      <section class="element">
+      <h3>Headings</h3>
+        <h1 class="header1">Header h1 (Title)</h1>
+        <h2 class="header2">Header h2 (Section)</h2>
+        <h3 class="header3">Header h3 (Sub Section)</h3>
+        <h4 class="header4">Header h4 (Secondary Sub Section)</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <!-- Learned in lecture -->
+        <p> Hey there, I'm YuFeng a fourth-year student studying Intrative Arts and Technology at Simon Fraser University From an early age, I've been fascinated by the fusion of technology and design, and I've always sought ways to enhance user experiences. Through my studies and practical experiences, I've honed my eye for aesthetics and developed a deep passion for crafting seamless digital interactions. I'm eager to stay ahead of emerging trends and collaborate with peers in this ever-evolving field. My ultimate goal is to work with a tech company that values user-centric design, creating products that leave a lasting impact and delight users worldwide. As graduation nears, I'm excited to embrace new challenges and make my mark in the world of UX/UI design.
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <!-- Learned in lecture -->
+        <ol>
+          <li> Project 1 </li>
+          <li> Project 2 </li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+      <section class="element">
+      <h3>Main Navigation</h3>
+      <nav class="navbar">  
+        <a class="nav-link nav-bar-up" href="index.html">Home</a>
+        <a class="nav-link nav-bar-up" >About</a>
+        <a class="nav-link nav-bar-up" >Serivces</a>
+        <a class="nav-link nav-bar-up" >Porfolio</a>
+        <a class="nav-link nav-bar-up" href="contact.html">Contact</a> 
+      </nav>
+    </section>
+
+    <!-- Learned from lab and some other parts from https://www.youtube.com/watch?v=qXRYMdvq_Dc  -->
+      <section class="element"> <!-- gives underline-->
+        <h3>Service Listing</h3>
+        <div class="container">
+          <div class="product">
+            <div class="product-img img-1"></div>
+            <h4>Destiny 2</h4><br>
+            <p>Definitive action massively multiplayer online game.</p>
+            <h4>PLAY FOR FREE</h4>
+            <a class="text-link" target = "_blank" href = "https://www.bungie.net/7/en/Destiny/NewLight"> More Info </a> 
+          </div>
+      
+          <div class="product">
+            <div class="product-img img-2"></div>
+            <h4>Marathon</h4><br>
+            <p>Science fiction first-person shooter video game.</p>
+            <h4>NOT RELEASED </h4>
+            <a class="text-link" target = "_blank" href = "https://www.marathonthegame.com/"> More Info </a>
+          </div>
+       
+          <div class="product">
+            <div class="product-img img-3"></div>
+            <h4>NERF LMTD Destiny Gjallarhorn Blaster</h4><br>
+            <p>Replica blaster from the Destiny video game.</p>
+            <h4>$185.00 USD</h4>
+            <a class="text-link" target = "_blank" href = "https://bungiestore.com/bungie-rewards-nerf-lmtd-destiny-gjallarhorn-blaster"> More Info </a> 
+          </div>
+        </div>
+      </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- Assemble Brand Components SECTION // -->
+    <section id="assemble_brand_components">
+      <h2>Assemble Brand Components</h2>
+
+      <section class="element">
+        <h4>Fonts</h4>
+        <h1> PTSans (Headings)</h1>
+        <p> regular, <em>italic</em>, <strong>bold</strong> </p>
+        <p> sans serif font for headings <a class="text-link" target = "_blank" href = "https://fonts.google.com/specimen/PT+Sans"> Google Fonts </a> </p>
+
+        <!-- notbold learned from https://stackoverflow.com/questions/12763344/removing-bold-styling-from-part-of-a-header -->
+        <h1> <span class='notbold'> SourceSansPro (Body text) </span></h1>
+        <p> regular, <em>italic</em>, <strong>bold</strong> </p>
+        <p> sans serif font for body text <a class="text-link" target = "_blank" href = "https://fonts.google.com/specimen/Source+Sans+Pro"> Google Fonts </a> </p>
+
+      </section>
+      <!-- Learned from lab and some from https://www.youtube.com/watch?v=EiNiSFIPIQE -->
+      <div class="colour-palette"> 
+        <section class="element">
+          <h3>Colour palettes</h3>
+          <!-- colors from https://www.color-hex.com/ -->
+          <div class="colourContainer">
+            <div class="box-colour brown">
+              <h4> Background </h4>
+              <p>HEX #E2D8CB</p>
+              <p>Body background</p>
+            </div>
+            <div class="box-colour white">
+              <h4> White </h4>
+              <p>HEX #FFFFFF</p>
+              <p>Navigation links, Button text</p>
+            </div>
+            <div class="box-colour black">
+              <h4> Black </h4>
+              <p>HEX #000000</p>
+              <p>Primary font colour, Section borders</p>
+            </div>
+            <div class="box-colour grass-green">
+              <h4> Accent 1 </h4>
+              <p>HEX #009A17</p>
+              <p>Button, Navigation bar, Input field</p>
+            </div>
+            <div class="box-colour green">
+              <h4> Accent 2 </h4>
+              <p>HEX #008000</p>
+              <p>Button hover</p>
+            </div>          
+          </div>
+        </section>
+      </div>
+    </section>
+
+      <section class="element">
+        <h3>Potential imagery, and, or, art direction</h3>
+        <h4>Sci-Fi</h4>
+        <h4>Futurism</h4><br>
+        <p><img src="img/ArmoredTrainInAction.png" alt = "this is the painting Armored train in action" style="width:250px;height:300px"></p>
+
+        <p><img src="img/zelda.png" alt = "this is the zelda game" style="width:350px;height:200px"></p>
+      </section>
+    </section>
+    <!-- // Assemble Brand Components SECTION -->
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul style="list-style-type:circle;" class="citation-link">
+
+        <li>Hunt, Paul D. Designer. 2011. <strong>Source Sans Pro [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Source+Sans+Pro">https://fonts.google.com/specimen/Source+Sans+Pro</a></li>
+        
+        <li>ParaType. Company. 2015. <strong> PTSans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/PT+Sans">https://fonts.google.com/specimen/PT+Sans</a></li>
+        
+
+        <li>Color-hex. Website. 2023. <strong>Color Hex and RGB [Image]</strong>. Retrieved from <a href="https://www.color-hex.com/">https://www.color-hex.com/</a></li>
+        
+        <li>Severini, Gino. Painter. 1915. <strong>Armored Train in Action [Painting]</strong>. Retrieved from <a href="https://www.newyorker.com/magazine/2014/03/03/party-lines-3">https://www.newyorker.com/magazine/2014/03/03/party-lines-3</a></li>
+       
+        <li>Bungie. Website. 2023. <strong>Destiny 2 Logo [Image]</strong>. Retrieved from <a href="https://www.bungie.net/7/en/Destiny/NewLight">https://www.bungie.net/7/en/Destiny/NewLight</a></li>
+       
+        <li>Bungie Store. Website. 2023. <strong>NERF LMTD Destiny Gjallarhorn Blaster [Image]</strong>. Retrieved from <a href="https://bungiestore.com/bungie-rewards-nerf-lmtd-destiny-gjallarhorn-blaster">https://bungiestore.com/</a></li>
+        
+        <li>Bungie Store. Website. 2023. <strong>Bungie Rewards - Archangel Dog Plush [Image]</strong>. Retrieved from <a href="https://bungiestore.com/bungie-rewards-archangel-archie-exo-dog-plush">https://bungiestore.com/</a></li>
+        
+        <li>Verbrugge, Kieron. Writier. 2023 <strong>Marathon Logo [Image]</strong>. Retrieved from <a href="https://press-start.com.au/news/playstation/2023/05/25/bungies-is-developing-a-new-marathon-game-and-its-a-pvp-extraction-shooter/">https://press-start.com.au/</a></li>
+
+        <li>Coberly, Cohen. Writer. 2021. <strong>The Legend of Zelda [Image]</strong>. Retrieved from <a href="https://www.techspot.com/article/2367-top-10-game-developers-all-time/">https://www.techspot.com/</a></li>
+      </ul>
+      
+    </section>
+  </body>
+</html>

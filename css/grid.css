@@ -1,126 +1,126 @@
-* {
-    box-sizing: border-box;
+* { /* * means apply to everything */
+    box-sizing: border-box;    
+}
+body {
+    font-family: 'SourceSansPro' ,sans-serif;
+    margin: 0;
 }
 
-.box {
+/* Product/Service Listing */
+.container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.product{
+    width: 350px;
+    height: 450px;
 }
 
-.box-item {
-    flex-grow: 1; 
-    flex-shrink: 1;
-    flex-basis:20rem;
+.product-img{
+    height: 350px;
+    background-size: cover;
 }
-
-.box-text {
-    flex-grow: 1; 
-    flex-shrink: 1;
-    flex-basis: auto;
+/* Learned from https://www.youtube.com/watch?v=qXRYMdvq_Dc */
+.img-1{
+    background-image: url('/img/Destiny2\ Logo.png');
 }
-
-.product-item-border {
-    border: rgb(255, 255, 255) solid;
-    padding: 1rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+.img-1:hover{
+    background-image: url('/img/Destiny2\ Logo.png');
+    opacity: 80%;
 }
-
-.product-item-border:hover,
-.product-item-border:focus {
-    /* border: #0469f7 solid; */
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    transition: 0.25s;
+.img-2{
+    background-image: url('/img/marathon.png');
 }
-
-.pay-border {
-    border: #ffffff solid;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+.img-2:hover{
+    background-image: url('/img/marathon.png');
+    opacity: 80%;
 }
-
-
-.total-border:hover,
-.total-border:focus {
-    border: #0469f7 solid;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    transition: 0.25s;
+.img-3{
+    outline:1px black solid;
+    background-image: url('/img/NERF\ Gjallarhorn.png');
 }
-
-.pay-border:hover,
-.pay-border:focus{
-    border: #0469f7 solid;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    transition: 0.25s;
+.img-3:hover{
+    outline:1px black solid;
+    background-image: url('/img/NERF\ Gjallarhorn.png');
+    opacity: 80%;
 }
-
-/* CONSTANT BORDER */
-.total-border {
-    border: #ffffff solid;
-    background-color:  #f0f0f0;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-
-.palette {
-    border: black solid;
-    padding: 2rem;
-    border-radius: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    flex-basis: 30rem; /* greater means more space it takes up */
-}
-
-/* LOCK THE FLEX BOX */
-.locksize30 {
-    max-width: 55rem;
-    justify-content:flex-start;
-    flex-wrap: nowrap;
-}
-
-/* UNLOCK THE FLEX BOX */
-@media screen and (min-width: 30em) {
-    .locksize30 {
-        flex-wrap:wrap;
-    }
-}
-
-
-@media (max-width: 1200px) {
-    .box {
-      flex-direction: column;
-    }
-  }
-
-  @media screen and (mix-width: 400px) {
-    body {
-        font-size: 50vw;
-    }
-}
-
-
-.artdirection {
+/* Product/Service Listing */
+.colourContainer {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.box-colour {
+    padding: 1em;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* direction of the text */
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.brown{
+    outline:1px black solid;
+    background-color: #E2D8CB;
+}
+
+.white{
+    outline:1px black solid;
+    color: black;
+    background-color: white;
+}
+
+.black{
+    color: white;
+    background-color: black;
+}
+
+.grass-green{
+    color: white;
+    background-color: #009A17;
+}
+
+.green{
+    color: white;
+    background-color: green;
 }
 
 
+/* Primarily learned in lab, some extra help from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+/* checkout */
+.checkout-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 70px;
+}
+.cartcol{
+    outline:1px black solid;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 20px;
+}
 
+.checkout-container form{
+    padding: 20px;
+    width: 700px;
+}
+
+.checkout-container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.checkout-container form .row.col{
+    flex: 1 1 250px;
+}
+
+/* space between info boxes*/
+.checkout-container form .row .col .infobox{
+    margin: 15px 0;
+}
