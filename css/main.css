@@ -1,478 +1,205 @@
 body {
-	font-family: 'Poppins-Regular', Verdana;
+	font-family: 'SourceSansPro' ,sans-serif;
 	padding: 2rem;
-	background-color: #ffffff;
-	color:rgb(0, 0, 0);
-	
-  }
-  /* HYPERLINK */
-  a { 
-	color: red;
-  }
-  /* HYPERLINK HOVER */
-  a:hover {
-	color: darkred;
-	transition: 0.25s ease-in-out;
-  }
-/* Nav bar */
-
-/* NEW NAV learned from https://codepen.io/rexdesigndk/pen/gJYExb*/
-.center {
-	text-align: center;
-}
-.nav-wrapper {
-	display: flex;
-	position: relative;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: space-between;
-	margin: auto;
-	width: 100%;
-	height: 80px;
-	border-radius: 0 0 15px 15px;
-	padding: 0 25px;
-	z-index: 2;
-	background: #fff;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.logo-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.logo {
-	height: 30px;
-	color: red;
-}
-
-.nav-tabs {
-	display: flex;
-	font-weight: 600;
-	font-size: 18px;
-	list-style: none;
-}
-
-.nav-tab:not(:last-child) {
-	padding: 10px 25px;
-	margin: 0;
-}
-
-.nav-tab:last-child {
-	padding: 10px 0 0 25px;
-}
-
-.nav-tab,
-.menu-btn {
-	cursor: pointer;
-}
-
-.hidden {
-	display: none;
-}
-
-@media screen and (max-width: 1200px) {
-	.nav-container {
-		position: fixed;
-		display: none;
-		overflow-y: auto;
-		z-index: -1;
-		top: 0;
-		right: 0;
-		width: 280px;
-		height: 100%;
-		background: #fff;
-		box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
-	}
-
-	.nav-tabs {
-		flex-direction: column;
-		align-items: flex-end;
-		margin-top: 80px;
-		width: 100%;
-  }
-
-	.nav-tab:not(:last-child) {
-		padding: 20px 25px;
-		margin: 0;
-		border-right: unset;
-		border-bottom: 1px solid #f5f5f5;
-	}
-
-	.nav-tab:last-child {
-		padding: 15px 25px;
-	}
-
-	.menu-btn {
-		position: relative;
-		display: block;
-		margin: 0;
-		width: 20px;
-		height: 15px;
-		cursor: pointer;
-		z-index: 2;
-		border-radius: 10px;
-    /*hamburger*/
-	}
-
-	.menu-btn .menu {
-		display: block;
-		width: 100%;
-		height: 2px;
-		border-radius: 2px;
-		background: #111;
-	}
-
-	.menu-btn .menu:nth-child(2) {
-		margin-top: 4px;
-		opacity: 1;
-	}
-
-	.menu-btn .menu:nth-child(3) {
-		margin-top: 4px;
-	}
-
-	#menuToggle:checked + .menu-btn .menu {
-		transition: transform 0.2s ease;
-	}
-
-	#menuToggle:checked + .menu-btn .menu:nth-child(1) {
-		transform: translate3d(0, 6px, 0) rotate(45deg);
-	}
-
-	#menuToggle:checked + .menu-btn .menu:nth-child(2) {
-		transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-		opacity: 0;
-	}
-
-	#menuToggle:checked + .menu-btn .menu:nth-child(3) {
-		transform: translate3d(0, -6px, 0) rotate(-45deg);
-	}
-
-	#menuToggle:checked ~ .nav-container {
-		z-index: 1;
-		display: flex;
-		animation: menu-slide-left 0.3s ease;
-	}
-	@keyframes menu-slide-left {
-		0% {
-			transform: translateX(200px);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-}
-
-/* Nav bar */
-
-.header-text{
-    margin-top: 10%;
-    font-size: 30px;
-    padding: 10px 5%;
-
-}
-.header-text h1{
-    font-size: 60px;
-}
-
-.header-text h1 span{
-    color: red;
-}
-
-.header-text h2{
-    font-size: 40px;
-    margin-top: -20px;
-}
-
-.container{
-    padding: 10px, 5%;
-}
-
-
-
-/*footer learned from https://youtu.be/JViuPwlP1mU*/
-footer{
-	position: relative;
-	width: 100%;
-	height: auto;
-	padding: 25px 100px;
-	top: 4rem; /* GAP ABOVE FOOTER ================================================================================================*/
-	background: #f0f0f0;
-  }
-  footer .container{
-	width: 100%;
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
-	grid-gap: 20px;
-  }
-  footer .container .section h2{
-	position: relative;
-	color: black;
-	font-weight: 600;
-	margin-bottom: 15px;
-  }
-  footer .container .quicklinks{
-	position: relative;
-  }
-  footer .container .quicklinks ul li{
-	list-style: none;
-  }
-  footer .container .quicklinks ul li a {
-	position: relative;
-	right: 40px;
-	text-decoration: none;
-	margin-bottom: 15px;
-	display: inline-block;
-  }
-  footer .container .contact .info{
-	position: relative;
-  }
-  footer .container .contact .info li{ 
-	position: relative;
-	right: 40px;
-	display: grid;
-	margin-bottom: 16px;
-  }
-  footer .container .contact li a {
-	text-decoration: none;
+	background-color: #E2D8CB; 
   }
   
-  .copyrightinfo{
-	width: 100%;
-	background:white;
-	padding: 20px 100px 30px;
-	text-align: center;
-  }
+  h1, h2, h3, h4{ /* only headers ptsans font*/
+	font-family: 'PTSans';
+   }
   
-  @media (max-width: 991px){
-	footer{
-	  padding: 40px;
-	}
-	footer .container{
-	  width: 100%;
-	  display: grid;
-	  grid-template-columns: repeat(2, 1fr);
-	  grid-gap: 20px;
-	}
-	.copyrightinfo{
-	  padding: 20px 40px 30px; 
-	}
-  }
-  @media (max-width: 768px){
-	footer .container{
-	  width: 100%;
-	  display: grid;
-	  grid-template-columns: repeat(1, 1fr);
-	  grid-gap: 20px;
-	}
-  }
-  
-
-
-
-  
-  /* CATEGORY */
   .element {
 	padding-bottom: 2rem;
 	border-top-width: 0.15rem;
 	border-top-style: solid;
-	border-top-color: #1fade0;
+	border-top-color: black;
   }
   
-  /* NAVIGATION BAR BUTTONS */
-  .navBut {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	padding: 0.3rem;
-	margin-left: 0.2rem;
-	margin-right: 0.2rem;
-  }
-  /* NAVIGATION SPECIALS */
-  .navBut:hover,
-  .navBut:focus,
-  .navBut:active
-   {
-	color: darkred;
-	text-decoration: none;
-	transition: 0.15s ease-in-out;
-  }
-  
+  .notbold{
+	font-weight:normal
+  }​
   
   h2:not(.header2) {
 	margin-top: 6rem;
   }
+  
   h3:not(.header3) {
 	font-style: italic;
 	margin-top: 1rem;
   }
+  
   h4:not(.header4) {
 	margin-bottom: 0.25rem;
   }
-  /* PARAGRAPH */
+  
   p {
 	margin-top: 0;
   }
-  /* NAVIGATION BAR COLOUR */
-  nav {
-	/* background-color: #f0f0f0; */
-	padding: 0.5rem;
-	display: block;
-  }
   
-  .topnav-right {
-	float: right;
-  }
-  
-  /* SUB NAVIGATION BAR COLOUR ONLY IN INDEX*/
-  .navAnchor {
-	background-color: #dddddd;
-  }
-  nav a:hover,
-  nav a:focus {
+  a:link {
 	text-decoration: none;
   }
+  
+  .text-link{
+	color:#009A17;
+  }
+   
+  .text-link:hover{
+	color: green;
+	text-decoration: underline;
+  }
+  .citation-link li > a{ /* new class for citation, gets the list and then the anchors inside*/
+	color: #009A17;
+  }
+  
+  .citation-link:hover li > a{
+	color: green;
+	text-decoration: underline;
+  }
+  nav a:hover, nav a:focus {
+	text-decoration: none;
+  }
+  
   code {
-	background-color: #f0f0f0;
+	background-color: #EEE;
 	padding: 0.5rem;
 	display: block;
   }
-  /* 
-	INTERACTIVE ELEMENTS -------------------
-  */
-  /* Styling for the navigation button */
-  /* nothing below makes the buttons turn grey after click*/
-  .button-nav {
-	display: inline-block;
-	padding: 0.5rem;
-	color: white; 
-	background-color: red;
-	text-decoration: none;
-	transition-property: background-color;
-	transition-duration: 0.25s;
-	border-radius: 2rem;
-	border: none;
-	outline: none;
-	box-shadow: 0 5px grey;
-  }
-  .button-nav:hover{
-	color: white; 
-	background-color: darkred;
-	transition: background-color 0.3s ease-out;
-  }
-  .button-nav:active {
-	background-color: darkred; 
-	color: white; 
-	box-shadow: 0 3px black;
-	transform: translateY(3px); 
-  } 
   
-  
-  .field-nav {
-	display: inline-block;
-	padding: 0.5rem;
-	color: #000000; /* TEXT AND BUTTON BORDER */
-	background-color:  #f0f0f0;
-	text-decoration: none;
-	transition-property: background-color;
-	transition-duration: 0.25s;
-	border-radius: 2rem;
-	border: solid;
+  section{
+	margin-top: 2rem;
   }
-  .field-nav:hover,
-  .field-nav:focus {
-	background-color: #ffffff;
-	border: solid darkred;
-	color: black;
-  }
-  
-  /* 2. Add space between <section> elements. */
-  /* LEARNED IN LAB */
-  section {
-	margin-top: 3rem;
-  }
-  /* 4. Add a different hover and focus state styling to the image as a link. */
-  /* LEARNED IN LAB */
-  /* pikachu img in styleguide*/
-  figure img:hover,
-  figure img:active,
-  figure img:focus {
-	opacity: 60%;
-	transition-duration: 0.25s;
-  }
-  
-  /* 5. Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
-  /* LEARNED IN LAB */
-  p,
-  ul,
-  ol {
+  /* learned in lab */
+  p, ul, ol {
 	max-width: 60rem;
   }
   
-  
-  /* 6. Style the <input> and <label> using Building Forms (Shay Howe)Links to an external site. as a guide. Add HTML as necessary to allow further control of the styling, and make sure:
-  The label and text input look visually related.
-  
-  The text input shows us when it has been interacted with, both on hover and focus. */
-  
-  /* LEARNED IN LAB Source: https://learn.shayhowe.com/html-css/building-forms/#multple-choice-inputs*/
-  
-  input:hover,
-  input:active,
-  input:focus {
-	color: rgb(0, 0, 0);
-	background-color: rgb(228, 228, 228);
-	transition: 0.25s ease-in-out;
+  /* 
+	INTERACTIVE ELEMENTS -------------------
+  */
+  /* learned from https://www.w3schools.com/howto/howto_css_animate_buttons.asp*/
+  .button {
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	padding: 5px 20px;
+	text-align: center;
+	background-color: #009A17;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px grey;
   }
   
-  .serif {
-	font-family: "RobotoSlab-Regular", Times;
-  
+  .button:hover {
+	background-color: green;
+	transition: background-color 0.3s ease-out;
   }
   
+  .button:active {
+	background-color: #009A17;
+	box-shadow: 0 3px black;
+	transform: translateY(3px);
+  }
   
-  /* HOVER NAV BUTTONS */
+  input[type=text]{
+	width: 15em;
+	border:1px solid black;
+	border-radius:5px;
+	margin: 10px 0;
+	outline:none;
+	padding: 10px;
+	box-sizing:border-box;
+	transition: 0.3s;
+  }
+  
+  input[type=text]:focus{
+	border-color: #009A17;
+	box-shadow:0 0 8px 0 #009A17;
+  }
+  
+  input[type=text]:hover{
+	background-color: rgb(239, 255, 239);
+  }
+  
+  /* Styling for the navigation button */
+  .button-nav {
+	display: inline-block;
+	padding: 0.5rem;
+	color: white;
+	background-color: rgb(50,50,50);
+	text-decoration: none;
+	transition-property: background-color; 
+	transition-duration: 0.3s;
+  }
+  
+  .button-nav:hover, .button-nav:focus {
+	background-color: rgb(200,200,200);
+  }
+  
+  .link-button{
+	background-color:#009A17; 
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+  }
+  
+  /* learned in lab */
+  .link-button:hover, .link-button:focus, .link-button:active{
+	background-color: green; /* #008000*/
+	color: white;
+	transition: background-color 0.3s ease-out;
+  }
+  
+  img:hover, img:focus, img:active {
+	opacity: 80%;
+  }
+  
+  /* 
+	TEXT ELEMENTS -------------------
+  */
+  
+  
+  /* 
+	COMBINED ELEMENTS -------------------
+  */
+  
+  
+  /* Main Nav learned from https://codepen.io/sreisner/pen/yOOOjx */
+  .navbar {
+	Background-color: #009A17;
+  }
+  .navbar2 {
+	Background-color: green;
+  }
+  
   .nav-link {
-	color: black;
+	color: white;
 	font-weight: bold;
-	/* font-size: 16px; */
-	padding: 0px 0px; /*making the line not too far to right*/
-	margin: 0px 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 20px 0px;
+	margin: 0px 15px;
 	display: inline-block;
 	position: relative;
   }
   
   .nav-link::before {
-	transition: 0.15s; /* time it takes for bar to appear*/
+	transition: 350ms; /* time it takes for bar to appear*/
 	height: 5px;
 	content: "";
 	position: absolute;
-	background-color: darkred;
+	background-color: white;
   }
   
-  /*BAR WIDTH B4 HOVER */
   .nav-bar-up::before {
-	margin: -8px 0px; /*moving the red bar down*/
 	height: 0;
 	width: 100%;
 	bottom: 0;
   }
   
-  /* BAR HEIGHT WHEN HOVERED */
   .nav-bar-up:hover::before {
-	height: 4px;
+	height: 5px;
   }
-  
-  .active {
-	background-color:darkred;
-  }
-  .header {
-	padding-top: 1rem;
-	text-align: center;
-	color: white;
-	font-size: 30px;
-  }
-  
-  
+  /* Main nav */

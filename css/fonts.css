@@ -1,27 +1,56 @@
+/* fonts obtained from google fonts and learned in lab*/
 @font-face {
-    font-family: 'Poppins-Regular';
+    font-family: 'SourceSansPro';
     font-weight: normal;
-    font-styles: normal;
-    src: url(../fonts/Poppins-Regular.ttf);
+    font-style: normal;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/SourceSansPro-Italic.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
+    font-family: 'SourceSansPro';
     font-weight: bold;
-    font-styles: bold;
-    src: url(../fonts/Poppins-Bold.ttf);
+    font-style: normal;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Poppins-Thin';
-    font-weight: normal;
-    font-styles: normal;
-    src: url(../fonts/Poppins-Thin.ttf);
+    font-family: 'SourceSansPro';
+    font-weight: bold;
+    font-style: italic;
+    src: url(../fonts/SourceSansPro-BoldItalic.ttf);
 }
 
 @font-face {
-    font-family: 'RobotoSlab-Regular';
+    font-family: 'PTSans';
     font-weight: normal;
-    font-styles: normal;
-    src: url(../fonts/RobotoSlab-Regular.ttf);
+    font-style: normal;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/PTSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: bold;
+    font-style: italic;
+    src: url(../fonts/PTSans-BoldItalic.ttf);
 }
