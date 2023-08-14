@@ -177,7 +177,7 @@ header.sticky{
     line-height: 1;
 }
 
-/* Button */
+/* Button, code from Project 2 */
 .button {
   cursor: pointer;
   color: white;
@@ -222,5 +222,27 @@ input[type=text]:hover{
   background-color: rgb(239, 255, 239);
 }
 /* Button code end*/
+
+/* Portfolio */
+.portfoliocontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
 
 
