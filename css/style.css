@@ -39,6 +39,7 @@ header{
     font-weight: 700;
     letter-spacing: 1px;
 }
+/* making words this colour with span*/
 span{
     color: darkred;
 }
