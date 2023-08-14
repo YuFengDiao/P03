@@ -245,4 +245,79 @@ input[type=text]:hover{
 }
 
 
-
+/* Footer */
+/*footer learned from https://youtu.be/JViuPwlP1mU*/
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 25px 100px;
+	top: 4rem; /* GAP ABOVE FOOTER ================================================================================================*/
+	background: #f0f0f0;
+  }
+  footer .container{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+  }
+footer .container .section h2{
+    position: relative;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+footer .container .quicklinks{
+	position: relative;
+}
+footer .container .quicklinks ul li{
+	list-style: none;
+}
+footer .container .quicklinks ul li a {
+	position: relative;
+	text-decoration: none;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+footer .container .contact .info{
+	position: relative;
+}
+footer .container .contact .info li{ 
+	position: relative;
+	display: grid;
+	margin-bottom: 16px;
+}
+footer .container .contact li a {
+	text-decoration: none;
+}
+  
+.copyrightinfo{
+	width: 100%;
+	background:white;
+	padding: 20px 100px 30px;
+	text-align: center;
+}
+  
+@media (max-width: 991px){
+    footer{
+	  padding: 40px;
+	}
+	footer .container{
+	  width: 100%;
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 20px;
+	}
+	.copyrightinfo{
+	  padding: 20px 40px 30px; 
+	}
+}
+@media (max-width: 768px){
+	footer .container{
+	  width: 100%;
+	  display: grid;
+	  grid-template-columns: repeat(1, 1fr);
+	  grid-gap: 20px;
+	}
+}
+/* Footer */

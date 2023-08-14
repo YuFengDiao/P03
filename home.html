@@ -6,7 +6,7 @@
     <title>YuFeng's Porfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-
+    
     <!-- Icon from https://github.com/atisawd/boxicons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -14,13 +14,13 @@
     
     <!-- Header -->
     <header>
-        <a href="#" class="logo"> YuFeng.</a> 
+        <a href="home.html" class="logo"> YuFeng.</a> 
 
         <ul class="navlist">
             <li><a href="home.html" class="active">Home</a></li>
             <li><a href="index.html">StyleGuide</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="portfolio.html">Porfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         
@@ -44,32 +44,37 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="maintext">
-            <p>Portfolio</p>
-            <h2>My Projects</h2>
-        </div>
-
-        <div class="portfoliocontent">
-            <div class="row">
-                <img src="img/ninteneleven.png" alt="ninteneleven website">
-                <div class="layer">
-                    <h2>Website Development and Design</h2>
-                    <button class="button">Learn More</button><br><br>
-                </div>   
+    <!-- Footer/contact section -->
+    <footer> <!-- Footer learned from https://youtu.be/JViuPwlP1mU-->
+        <div class="container" id="contact">
+            <div class="section-about-me">
+                <h2 class="header2">About Me</h2><br>
+                <p>Hello, I'm YuFeng. UI/UX Designer. Currently studying Intrative Arts and Technology at Simon Fraser University.</p>
+                <br><p>Copyright ©2023 YuFeng Diao. All Rights Reserved.</p>
             </div>
-
-            <div class="row">
-                <img src="img/Boom.png" alt="Booooooom website">
-                <div class="layer">
-                    <h2>Website Content Redesign</h2>
-                    <button class="button">Learn More</button><br><br>
-                </div>   
+            <div class="section quicklinks">
+            </div>
+            <div class="section quicklinks">
+                <h2 class="header2">Content</h2>
+                <ul>
+                    <li><a href="index.html">StyleGuide</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="section contact">
+                <h2 class="header2">Contact Me</h2>
+                <ul class="info">
+                    <li>
+                        <p><a href="tel:12345678900">+1 778 903 7988</a></p>
+                    </li>
+                    <li>
+                        <p><a href="mailto:yda58@sfu.ca">yda58@sfu.ca</a></p>
+                    </li>
+                </ul> 
             </div>
         </div>
-    </section>
-
+    </footer>
 
     <!-- Js -->
     <script type="text/javascript" src="js/script.js"></script>

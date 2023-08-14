@@ -1,80 +1,68 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/fonts.css">
-        <title>YuFeng's Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuFeng's Porfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    
+    <!-- Icon from https://github.com/atisawd/boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <div id="header">
-        <div class="nav-wrapper">
-            <div class="logo-container">
-                <h1 class="logo">YuFeng Diao.</h1>
-            </div>
-            <nav>
-                <input class="hidden" type="checkbox" id="menuToggle">
-                <label class="menu-btn" for="menuToggle">
-                    <div class="menu"></div>
-                    <div class="menu"></div>
-                    <div class="menu"></div>
-                </label>
-                <div class="nav-container">
-                    <ul class="nav-tabs">
-                        <a class="nav-tab" href="index.html" style="text-decoration-line: none">StyleGuide</a>
-                        <a class="nav-tab" href="home.html" style="text-decoration-line: none">Home</a>
-                        <a class="nav-tab" href="about.html" style="text-decoration-line: none">About</a>
-                        <a class="nav-tab" href="services.html" style="text-decoration-line: none">Services</a>
-                        <a class="nav-tab" href="portfolio.html" style="text-decoration-line: none">Portfolio</a>
-                        <a class="nav-tab" href="contact.html" style="text-decoration-line: none">Contact</a>
-                    </ul>
-                </div>
-            </nav>
-        </div>   
+    
+    <!-- Header -->
+    <header>
+        <a href="home.html" class="logo"> YuFeng.</a> 
 
-
-    <section>
-        <h2 class="header2">Process Analyses</h2>
-        <div class="box">
-
-            <div class="box-item product-item-border">
-
-                <a href="booooooom.html"><img src="img/Boom.png" alt="BOOOOOOOM Website" width="100%"
-                        style="border-radius: 1rem;"></a>
-
-                <h2 class=" header2">BOOOOOOOM</h2>
-                <h3 class="header3">Web Design and Branding</h3>
-                <a class="button-nav" href="booooooom.html">Learn More</a>
-                <br>
-
-            </div>
-
-            <div class="box-item product-item-border">
-                <a href="ninteneleven.html"><img src="img/ninteneleven.png" alt="ninteneleven P2 project" width="100%" height="75%"
-                        style="border-radius: 1rem;"></a>
-                <h2 class="header2">ninteneleven</h2>
-                <h3 class="header3">Web Development and Design</h3>
-                <a class="button-nav" href="ninteneleven.html">Learn More</a>
-                <br>
-            </div>
-
+        <ul class="navlist">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="index.html">StyleGuide</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
         
-        </div> <!--END FLEX BOX-->
+        <!-- Hamburger icon-->
+        <div class="bx bx-menu" id="menu-icon">
 
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="maintext">
+            <p>Portfolio</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="portfoliocontent">
+            <div class="row">
+                <img src="img/ninteneleven.png" alt="ninteneleven website">
+                <div class="layer">
+                    <h2>Website Development and Design</h2>
+                    <button class="button">Learn More</button><br><br>
+                </div>   
+            </div>
+
+            <div class="row">
+                <img src="img/Boom.png" alt="Booooooom website">
+                <div class="layer">
+                    <h2>Website Content Redesign</h2>
+                    <button class="button">Learn More</button><br><br>
+                </div>   
+            </div>
+        </div>
     </section>
 
+    <!-- Footer/contact section -->
     <footer> <!-- Footer learned from https://youtu.be/JViuPwlP1mU-->
         <div class="container">
-            <div class="section about me">
-                <h2 class="header2">About Me</h2>
-                <p>Hello, I'm YuFeng. Currently studying Intrative Arts and Technology at Simon Fraser University.</p>
-                <p>Copyright ©2023 YuFeng Diao. All Rights Reserved.</p>
+            <div class="section-about-me">
+                <h2 class="header2">About Me</h2><br>
+                <p>Hello, I'm YuFeng. UI/UX Designer. Currently studying Intrative Arts and Technology at Simon Fraser University.</p>
+                <br><p>Copyright ©2023 YuFeng Diao. All Rights Reserved.</p>
             </div>
             <div class="section quicklinks">
             </div>
@@ -83,7 +71,6 @@
                 <ul>
                     <li><a href="index.html">StyleGuide</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                 </ul>
             </div>
@@ -100,5 +87,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Js -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
