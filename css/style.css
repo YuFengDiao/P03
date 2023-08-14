@@ -67,7 +67,7 @@ span{
     color: red;
 }
 
-#menu-icon{
+#hamburger-icon{
     font-size: 35px;
     color: var(--text-color);
     z-index: 10001;
@@ -372,4 +372,40 @@ footer .container .contact li a {
         max-width: 100%;
     }
 }
+
+
+/* for nav bar learned from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
+@media (max-width: 800px){
+    #hamburger-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist a:active{
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
 
